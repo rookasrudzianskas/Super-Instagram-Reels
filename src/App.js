@@ -16,7 +16,14 @@ function App() {
 
       <div className="app__videos">
       {/* Container of app__videors (scrollable container) */}
-        <VideoCard />
+        <VideoCard
+            channel={channel}
+            avatarSrc={avatarSrc}
+            song={song}
+            url={url}
+            likes={likes}
+            shares={shares}
+            />
         <VideoCard />
         <VideoCard />
         <VideoCard />
