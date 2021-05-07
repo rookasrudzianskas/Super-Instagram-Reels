@@ -29,6 +29,8 @@ const VideoCard = () => {
             {/*     but with video we like point to the video from videoRef*/}
             <iframe ref={videoRef} onClick={onVideoPress} className="video__player" src="https://www.youtube-nocookie.com/embed/aUO5OD4wzmw?controls=0"
                     title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen/>
+
+            <VideoFooter />
         </div>
     );
 };
