@@ -3,7 +3,7 @@ import "./styles/VideoCard.css";
 import VideoHeader from "./VideoHeader";
 import VideoFooter from "./VideoFooter";
 
-const VideoCard = () => {
+const VideoCard = ({ url, likes, shares, channel, avatarSrc, song }) => {
 
     const [isVideoPlaying, setIsVideoPlaying] = useState('');
     // ref is like your pointing to some object
@@ -28,10 +28,16 @@ const VideoCard = () => {
         <div className="videoCard">
             <VideoHeader />
             {/*     but with video we like point to the video from videoRef*/}
-            <iframe ref={videoRef} onClick={onVideoPress} className="video__player" src="https://www.youtube-nocookie.com/embed/aUO5OD4wzmw?controls=0"
+            <iframe ref={videoRef} onClick={onVideoPress} className="video__player" src={url}
                     title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen/>
 
-            <VideoFooter />
+            <VideoFooter
+                channel={channel}
+                likes={likes}
+                shares={shares}
+                avatarSrc={avatarSrc}
+                song={song}
+            />
         </div>
     );
 };
