@@ -41,3 +41,11 @@
     left: 5px;
     color: white;
 }
+
+.videoFooter__actions {
+    display: flex;
+    position: absolute;
+    width: 95%;
+    justify-content: space-between;
+    color: white;
+}
