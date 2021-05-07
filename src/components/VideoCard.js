@@ -1,5 +1,6 @@
 import React, {useRef, useState} from 'react';
 import "./styles/VideoCard.css";
+import VideoHeader from "./VideoHeader";
 
 const VideoCard = () => {
 
@@ -24,7 +25,7 @@ const VideoCard = () => {
 
     return (
         <div className="videoCard">
-            <VideoCard />
+            <VideoHeader />
             {/*     but with video we like point to the video from videoRef*/}
             <iframe ref={videoRef} onClick={onVideoPress} className="video__player" src="https://www.youtube-nocookie.com/embed/aUO5OD4wzmw?controls=0"
                     title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen/>

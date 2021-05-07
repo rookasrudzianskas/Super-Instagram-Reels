@@ -1,5 +1,5 @@
 import './App.css';
-// import VideoCard from "./components/VideoCard";
+import VideoCard from "./components/VideoCard";
 
 function App() {
   return (
@@ -16,11 +16,11 @@ function App() {
 
       <div className="app__videos">
       {/* Container of app__videors (scrollable container) */}
-      {/*  <VideoCard />*/}
-        {/*<VideoCard />*/}
-        {/*<VideoCard />*/}
-        {/*<VideoCard />*/}
-        {/*<VideoCard />*/}
+        <VideoCard />
+        <VideoCard />
+        <VideoCard />
+        <VideoCard />
+        <VideoCard />
       {/*  Video component  */}
       {/*  Video component  */}
       {/*  Video component  */}
