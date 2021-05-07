@@ -5,4 +5,9 @@
     position: absolute;
     color: white;
     width: 100%;
+
+}
+
+.videoHeader > * {
+    padding: 20px;
 }
