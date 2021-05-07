@@ -29,6 +29,29 @@ const VideoFooter = ({ channel, song, likes, shares, avatarSrc }) => {
                 </Ticker>
             </div>
 
+            <div className="videoFooter__actions">
+
+                <div className="videoFooter-actionsLeft">
+
+                    <FavoriteIcon fontSize="medium" />
+                    <ModeCommentIcon fontSize="medium" />
+                    <SendIcon fontSize="medium" />
+                    <MoreHorizIcon fontSize="medium" />
+
+                </div>
+                <div className="videoFooter-actionsRight">
+
+                    <div className='videoFooter-stat'>
+                        <FavoriteIcon fontSize="small" />
+                        <p>{likes}</p>
+                    </div>
+                    <div className='videoFooter-stat'>
+                        <ModeCommentIcon fontSize="small" />
+                        <p>{shares}</p>
+                    </div>
+                </div>
+            </div>
+
         </div>
     );
 };
