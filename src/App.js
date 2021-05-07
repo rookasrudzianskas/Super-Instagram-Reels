@@ -18,7 +18,7 @@ function App() {
       {/* Container of app__videors (scrollable container) */}
         <VideoCard
             channel="Rokas"
-            avatarSrc="https://twitter.com/byrookas/photo"
+            avatarSrc="https://pbs.twimg.com/profile_images/1350895249678348292/RS1Aa0iK_400x400.jpg"
             song='Something cool'
             url='https://www.youtube-nocookie.com/embed/aUO5OD4wzmw?controls=0'
             likes={4324}
@@ -27,7 +27,7 @@ function App() {
 
           <VideoCard
               channel="Rokas"
-              avatarSrc="https://twitter.com/byrookas/photo"
+              avatarSrc="https://pbs.twimg.com/profile_images/1350895249678348292/RS1Aa0iK_400x400.jpg"
               song='Something cool'
               url='https://www.youtube-nocookie.com/embed/aUO5OD4wzmw?controls=0'
               likes={4324}
