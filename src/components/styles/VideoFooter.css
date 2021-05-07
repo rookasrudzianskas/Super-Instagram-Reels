@@ -1,8 +1,15 @@
+.videoFooter {
+    position: relative;
+    margin-left: 20px;
+    bottom: 100px;
+}
+
 .videoFooter__text {
     position: absolute;
     bottom: 0;
     display: flex;
     margin-bottom: 20px;
+    color: white;
 }
 
 .videoFooter__text > h3 {
@@ -14,4 +21,23 @@
     color: white;
     font-weight: 900;
     text-transform: inherit;
+}
+
+.videoFooter__ticker > .ticker {
+    width: 60%;
+    margin-bottom: 20px;
+    height: fit-content;
+    margin-left: 30px;
+}
+
+.videoFooter__ticker h1 {
+    font-size: 12px;
+    padding-top: 7px;
+    color: white;
+}
+
+.videoFooter__icon {
+    position: absolute;
+    left: 5px;
+    color: white;
 }
