@@ -7,6 +7,8 @@ const VideoHeader = () => {
     return (
         <div className="videoHeader">
             <ArrowBackIosIcon />
+            <h1>Reels</h1>
+            <CameraAltOutlinedIcon />
         </div>
     );
 };
