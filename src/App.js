@@ -25,6 +25,15 @@ function App() {
             shares={4324}
             />
 
+          <VideoCard
+              channel="Rokas"
+              avatarSrc="https://twitter.com/byrookas/photo"
+              song='Something cool'
+              url='https://www.youtube-nocookie.com/embed/aUO5OD4wzmw?controls=0'
+              likes={4324}
+              shares={4324}
+          />
+
       {/*  Video component  */}
       {/*  Video component  */}
       {/*  Video component  */}
