@@ -1,6 +1,7 @@
 import React, {useRef, useState} from 'react';
 import "./styles/VideoCard.css";
 import VideoHeader from "./VideoHeader";
+import VideoFooter from "./VideoFooter";
 
 const VideoCard = () => {
 
