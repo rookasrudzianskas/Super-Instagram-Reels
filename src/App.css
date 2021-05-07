@@ -36,6 +36,6 @@ html {
 }
 
 .app__videos {
-    -ms-overflow-style: none;
+    -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;
 }
