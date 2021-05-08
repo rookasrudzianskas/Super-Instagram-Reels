@@ -1,7 +1,25 @@
 import './App.css';
 import VideoCard from "./components/VideoCard";
+import {useEffect, useState} from "react";
+import db from "./firebase";
 
 function App() {
+
+    const [reels, setReels] = useState([]);
+
+    useEffect(() => {
+        // is going to run once
+        db.collection('reels').onSnapshot(snapshot => {
+            // go per each doc and take everything what is in it, all the data
+            // .data() is everything in that ID the doc.
+            // reeels gget as us the collection
+            // the snapshot docs get us all the docs, the column 2, and the doc.data, gets everything what is associated with ID
+            // with the data such as name, channel. likes
+            // and we get in the reels, the array, of objects, because per every iteration it gets the new object, and stores in the array
+            setReels(snapshot.docs.map(doc => doc.data))
+        })
+    }, []);
+
   return (
     <div className="app">
 
