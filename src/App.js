@@ -6,6 +6,7 @@ import db from "./firebase";
 function App() {
 
     const [reels, setReels] = useState([]);
+    console.log(reels)
 
     useEffect(() => {
         // is going to run once
@@ -16,7 +17,7 @@ function App() {
             // the snapshot docs get us all the docs, the column 2, and the doc.data, gets everything what is associated with ID
             // with the data such as name, channel. likes
             // and we get in the reels, the array, of objects, because per every iteration it gets the new object, and stores in the array
-            setReels(snapshot.docs.map(doc => doc.data))
+            setReels(snapshot.docs.map(doc => doc.data()))
         })
     }, []);
 
@@ -34,24 +35,17 @@ function App() {
 
       <div className="app__videos">
       {/* Container of app__videors (scrollable container) */}
-        <VideoCard
-            channel="Rokas"
-            avatarSrc="https://pbs.twimg.com/profile_images/1350895249678348292/RS1Aa0iK_400x400.jpg"
-            song='Something cool'
-            url='https://www.youtube-nocookie.com/embed/aUO5OD4wzmw?controls=0'
-            likes={4324}
-            shares={4324}
-            />
-
-          <VideoCard
-              channel="Rokas"
-              avatarSrc="https://pbs.twimg.com/profile_images/1350895249678348292/RS1Aa0iK_400x400.jpg"
-              song='Something cool'
-              url='https://www.youtube-nocookie.com/embed/aUO5OD4wzmw?controls=0'
-              likes={4324}
-              shares={4324}
-          />
-
+      {/*     for every reel we return the card */}
+          {reels.map(({channel, avatarSrc, song, url, likes, shares}) => (
+                <VideoCard
+                    channel={channel}
+                    avatarSrc={avatarSrc}
+                    song={song}
+                    url={url}
+                    likes={likes}
+                    shares={shares}
+                />
+              ))}
       {/*  Video component  */}
       {/*  Video component  */}
       {/*  Video component  */}
