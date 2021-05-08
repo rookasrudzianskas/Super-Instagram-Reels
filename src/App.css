@@ -3,6 +3,8 @@ html {
     scroll-snap-type: y mandatory;
 }
 
+
+
 .app {
     display: grid;
     place-items: center;
@@ -38,4 +40,8 @@ html {
 .app__videos {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;
+}
+
+.app__videos::-webkit-scrollbar {
+    display: none;
 }
