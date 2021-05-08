@@ -14,7 +14,7 @@ const VideoFooter = ({ channel, song, likes, shares, avatarSrc }) => {
             <div className="videoFooter__text">
                 <Avatar src={avatarSrc} />
                 <h3>
-                    {channel} • <Button>Follow</Button>
+                    {channel} • <Button>Follow 🚀</Button>
                 </h3>
             </div>
 
