@@ -31,7 +31,7 @@ const VideoFooter = ({ channel, song, likes, shares, avatarSrc }) => {
 
             <div className="videoFooter__actions">
 
-                <div className="videoFooter-actionsLeft">
+                <div className="videoFooter__actionsLeft">
 
                     <FavoriteIcon />
                     <ModeCommentIcon />
@@ -39,13 +39,13 @@ const VideoFooter = ({ channel, song, likes, shares, avatarSrc }) => {
                     <MoreHorizIcon  />
 
                 </div>
-                <div className="videoFooter-actionsRight">
+                <div className="videoFooter__actionsRight">
 
-                    <div className='videoFooter-stat'>
+                    <div className='videoFooter__stat'>
                         <FavoriteIcon  />
                         <p>{likes}</p>
                     </div>
-                    <div className='videoFooter-stat'>
+                    <div className='videoFooter__stat'>
                         <ModeCommentIcon />
                         <p>{shares}</p>
                     </div>
